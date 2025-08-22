@@ -1,0 +1,72 @@
+.Main {
+    /* display: flex; */
+    /* width: 100%; */
+    height: 100%;
+    align-items: center;
+}
+
+.mostrar-vista {
+    animation: mostrar-vista .5s ease both;
+}
+
+@keyframes mostrar-vista {
+    from {
+        transform: translateX(100vw) scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.cerrar-vista {
+    animation: cerrar-vista 1s ease both;
+}
+
+@keyframes cerrar-vista {
+    from {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100vw) scale(0);
+        opacity: 0;
+    }
+}
+
+/* Teléfonos (ancho menor a 768px) */
+@media screen and (max-width: 768px) {
+    .Training {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .Training .slider-container {
+        width: 100%;
+    }
+    
+    .Training .btn-container {
+        padding: 0 1rem;
+    }
+
+    .Training .btn-container button {
+        width: 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .move-container {
+        flex-direction: row;
+    }
+
+    .Formaciones, .Proyectos {
+        min-width: 100%;
+        max-width: 100%;
+        padding: 1rem;
+    }
+}

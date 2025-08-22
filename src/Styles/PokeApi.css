@@ -1,0 +1,9 @@
+span {
+    font-weight: bold;
+}
+
+h2 {
+    background-image: url(/public/International_Pokémon_logo.svg.png);
+    font-size: 10vh;
+    /* font-family: 'Courier New', Courier, monospace; */
+}

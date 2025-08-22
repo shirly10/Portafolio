@@ -1,0 +1,129 @@
+.About{
+    display: flex;
+    width: 100%;
+    max-width: 45rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.About .separador{
+    display: flex;
+    gap: 2rem;
+}
+
+.About .separador > img{
+    display: flex;
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.About .separador .info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.About .separador .info strong{
+    font-size: 1.5rem;
+}
+
+.About .separador .info p{
+    font-size: .8rem;
+}
+
+@media (max-width: 768px) {
+    .About .separador {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .About .separador .info {
+        align-items: center;
+    }
+
+    .About .separador .info p {
+        text-align: center;
+    }
+}
+
+
+
+
+/* .About {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.About h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+}
+
+.About .separador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
+.About .separador > img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.About .separador .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 600px;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.About .separador .info strong {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #111;
+}
+
+.About .separador .info p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+Responsive para pantallas pequeñas
+@media (max-width: 768px) {
+    .About .separador {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .About .separador .info {
+        align-items: center;
+    }
+
+    .About .separador .info p {
+        text-align: center;
+    }
+}

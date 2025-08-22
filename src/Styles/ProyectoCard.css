@@ -1,0 +1,71 @@
+.ProjectCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #222;
+    color: white;
+    border-radius: 1rem;
+    gap: 1rem;
+    margin: 1rem;
+    width: 10rem;
+    height: 90rem;
+    aspect-ratio: 9/16;
+    overflow: hidden;
+    max-height: 15rem;
+    transition: transform .3s ease, border .3s ease;
+}
+
+.ProjectCard:hover {
+    transform: scale(1.03);
+    outline: 1px solid var(--primary);
+}
+
+.ProjectCard img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.ProjectCard strong {
+    text-align: center;
+    color: var(--primary);
+}
+
+.ProjectCard p {
+    font-size: .8rem;
+    padding: 0rem 1rem;
+}
+
+.ProjectCard .btn-separador {
+    display: flex;
+    padding: 0.5rem;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.ProjectCard button {
+    width: 8rem;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 1rem;
+    border: 1px solid var(--primary);
+    background-color: transparent;
+    color: white;
+}
+
+.ProjectCard button:nth-child(even) {
+    background-color: var(--primary);
+}
+
+.ProjectCard a {
+    text-decoration: none;
+    color: white;
+}
+
+.ProjectCard button:nth-child(even) a {
+    background-color: var(--primary);
+    color: black;
+}
