@@ -50,11 +50,11 @@ function Contacto() {
         setValue(cual, valores.replace(/[^a-zA-ZñÑ]/g,""));
     }
 
-    const filtrarNumeros = (cual) => {
-        let valores = "";
-        valores = getValues(cual);
-        setValue(cual, valores.replace(/[^0-9]/g,""));
-    }
+    // const filtrarNumeros = (cual) => {
+    //     let valores = "";
+    //     valores = getValues(cual);
+    //     setValue(cual, valores.replace(/[^0-9]/g,""));
+    // }
 
     return (
         <section className="Contacto">
